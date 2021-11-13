@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Varela+Round&display=swap');
+body {
+    background-color: #dbe079;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #719650, #46c7a7);
+    border-bottom-right-radius: 350px;
+    border-bottom: 8px solid #bccfcd;
+}
+
+.general-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #dbe079;
+    font-family: 'Oswald';
+    font-weight: bold;
+    color: #719650;
+    position: fixed;
+    width: 100%;
+    border-bottom: 8px solid #bccfcd;
+}
+
+.general-link>a {
+    text-decoration: none;
+    color: #2b8a80;
+}
+
+.general-link>a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.smile-icon {
+    background-color: #2b8a80;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    font-family: 'Oswald';
+    font-weight: bold;
+    border: 3px solid black;
+    color: #dbe079
+}
+
+.smile-icon:hover {
+    background-color: #14b564;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.general-info-desc {
+    font-family: 'Varela Round';
+    margin: 100px 40px 60px 220px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #dbe079;
+}
+
+.general-info>img {
+    height: 410px;
+    width: 330px;
+    margin: 50px 240px 60px 20px;
+    border: 5px solid #bccfcd;
+    border-radius: 95px;
+}
+
+#open-list {
+    margin: 30px 60px 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.about-me {
+    text-align: center;
+    background-color: #bccfcd;
+    width: 650px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Varela Round';
+}
+
+.about-me:active {
+    height: 300px;
+}
+
+.about-me>h3 {
+    text-decoration: underline dashed;
+}
+
+.about-me>p {
+    width: 600px;
+    text-align: justify;
+}
+
+#container {
+    background-image: url('/photo/computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 8px solid #bccfcd;
+    border-bottom: 8px solid #bccfcd;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.boxes {
+    background-color: rgba(182, 207, 180, 0.9);
+    border-radius: 50px;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Oswald';
+}
+
+.boxes-general {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clicker {
+    background-color: #dbe079;
+    border: none;
+}
+
+.carousel-inner {
+    text-align: center;
+    font-family: 'Varela Round';
+}
+
+.contacts-instruction {
+    font-family: 'Oswald';
+}
+
+#contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.contacts-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 70px 0 70px;
+    letter-spacing: 3px;
+    font-family: 'Oswald';
+    font-weight: 600;
+}
+
+.contacts-items>p {
+    margin: 5px;
+}
+
+footer {
+    background: linear-gradient(to right, #719650, #46c7a7);
+    height: 220px;
+    border-top: 8px solid #bccfcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright {
+    text-align: center;
+    border: 2px solid #dbe079;
+    border-radius: 30px;
+    background-color: rgba(182, 207, 180, 0.5);
+    width: 100px;
+    font-family: 'Varela Round';
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .general-info-desc {
+        margin: 90px 40px 80px 70px;
+    }
+    #contacts {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 17px;
+    }
+    .general-link {
+        width: 100%;
+    }
+    .contacts-items {
+        margin: 0 20px 0 20px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 889px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .contacts-items {
+        margin: 0 5px 0 5px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 706px) {
+    .general-info-desc {
+        margin: 90px 40px 80px 30px;
+    }
+    .general-info>img {
+        height: 310px;
+        width: 230px;
+        margin: 50px 240px 60px 20px;
+        border: 5px solid #bccfcd;
+        border-radius: 95px;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-me>p {
+        width: 330px;
+        padding: 30px;
+    }
+    .boxes {
+        margin-top: 30px;
+    }
+    #contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 568px) {
+    .general-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .general-info-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .general-info>img {
+        margin: 90px 40px 80px 30px;
+    }
+    header {
+        background: linear-gradient(to right, #719650, #46c7a7);
+        border-bottom-right-radius: inherit;
+        border-bottom: 8px solid #bccfcd;
+    }
+}
